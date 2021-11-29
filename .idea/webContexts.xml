@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/admin/view/add-product.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/admin/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/admin/view/doanhthubanhang.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/admin/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/admin/view/doanhthubanhang_nam.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/admin/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/admin/view/excelreport.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/admin/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/admin/view/list-category.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/admin/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/admin/view/list-order.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/admin/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/admin/view/list-warehouse_receipt.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/admin/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/admin/view/slide-bar.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/admin/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/web/header.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/web" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/web/product-details.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/web" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/web/shop.jsp" value="file://$PROJECT_DIR$/src/main/webapp/views/web" />
+      </map>
+    </option>
+  </component>
+</project>

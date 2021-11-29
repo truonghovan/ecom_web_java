@@ -1,0 +1,40 @@
+
+Status
+ 	0:	Deleted
+	1:	activity
+
+--------------------------------------
+Status Cart
+    0:  Deleted
+    1:  Chưa duyệt
+    2:  Đã duyệt
+    3:  Đang giao
+    4:  Đã hoàn thành
+    5:  Không nhận hàng
+ --------------------------------------
+ Role
+    0 : client
+    1 : Admin
+    2 : Shipper
+    3 : Employee
+  ------------------------------------
+  Payment
+    0 : off
+    1 : onl
+--------------------------------------
+Cart thiếu ngày mua hàng
+     thiếu hình thức thanh toán
+
+--------------------------------------
+Phiếu nhập hàng
+Hoàn thành : 0 -- > Chưa nhập xong
+             1 ---> Đã nhập xong
+ ----------------------------------------
+ Hàng hóa của phiếu nhập hàng :
+    status : 0 ----> đã nhập
+    status : 1 ----> chưa nhập
+
+Lỗi đang gặp phải
+	- Chưa insert được ảnh vào project
+	- Chưa insert được describe xuống database (do ko lấy được dữ liệu từ CKEDITOR)  (đã fix xog)
+	- phần quản lý lọai hàng chạy lên giao diện của thương hiêu
