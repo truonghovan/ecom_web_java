@@ -12,10 +12,8 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>Trang chủ</title>
-	<link href="${url}/css/bootstrap.min.css" rel="stylesheet">
-	<link href="${url}/css/font-awesome.min.css" rel="stylesheet">
-	<link href="${url}/css/main.css" rel="stylesheet">
-	<link href="${url}/css/responsive.css" rel="stylesheet">
+	
+
 	<!--  -->
 </head>
 
@@ -57,16 +55,16 @@
 	</div>
 </section><!--/slider-->
 
-<section>
+<section class ="shop__background">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 padding-right">
+			<div class="col-sm-12 padding-right css--overrides">
 				<div class="features_items"><!--features_items-->
 					<h1 style="color: red" class="title text-center">SẢN PHẨM</h1>
 				</div><!--features_items-->
 				
-				<div class="row">
-					<div class="col-lg-3" height="250px">
+				<div class="row row--product">
+					<div class="col-lg-3 css--overrides" height="250px">
 						<img height="450px" width="310" src="https://thenewxgear.com/wp-content/uploads/2021/10/Acer-v2-768x768.jpg">
 					</div>
 					<div class="col-lg-9">
@@ -89,7 +87,7 @@
 																<a
 																		href="${pageContext.request.contextPath }/client-product-list?type=detail_product&id=${i.getId()}&quantity=1">
 																	<div class="c1">
-																		<img  height="250" width="200" class="c2" src="${imgUrl}" alt="Fail" style="width: 300px;height: 200px;padding-left: 40px;"/>
+																		<img  height="250" width="200" class="c2" src="${imgUrl}" alt="Fail" style="max-width: 100%; height: 200px;padding-left: 40px;"/>
 																		<div class="c3">
 																			<a  <%--href="${APIurl}?id=${i.getId()}"--%>
 																					href="${pageContext.request.contextPath }/client-product-list?type=detail_product&id=${i.getId()}&quantity=1"
@@ -118,7 +116,7 @@
 					</div>
 				</div>
 				
-				<div class="row">
+				<div class="row row--product">
 					<div class="col-lg-9">
 						<div class="category-tab"><!--category-tab-->
 							<div class="col-sm-12">
@@ -139,7 +137,7 @@
 																<a
 																		href="${pageContext.request.contextPath }/client-product-list?type=detail_product&id=${i.getId()}&quantity=1">
 																	<div class="c1">
-																		<img height="250" width="200" class="c2" src="${imgUrl}" alt="Fail" style="width: 300px;height: 200px;padding-left: 40px;"/>
+																		<img height="250" width="200" class="c2" src="${imgUrl}" alt="Fail" style="max-width: 100%; height: 200px;padding-left: 40px;"/>
 																		<div class="c3">
 																			<a  <%--href="${APIurl}?id=${i.getId()}"--%>
 																					href="${pageContext.request.contextPath }/client-product-list?type=detail_product&id=${i.getId()}&quantity=1"
@@ -167,13 +165,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 css--overrides">
 						<img height="450px" width="310"  src="https://thenewxgear.com/wp-content/uploads/2021/10/ROG-768x768.jpg">
 					</div>
 				</div>
 				
-				<div class="row">
-					<div class="col-lg-3">
+				<div class="row row--product">
+					<div class="col-lg-3 css--overrides">
 						<img  height="450px" width="310"  src="https://thenewxgear.com/wp-content/uploads/2021/10/msi-768x768.jpg">
 					</div>
 					<div class="col-lg-9">
@@ -196,7 +194,7 @@
 																<a
 																		href="${pageContext.request.contextPath }/client-product-list?type=detail_product&id=${i.getId()}&quantity=1">
 																	<div class="c1">
-																		<img height="250" width="200" class="c2" src="${imgUrl}" alt="Fail" style="width: 300px;height: 200px;padding-left: 40px;"/>
+																		<img height="250" width="200" class="c2" src="${imgUrl}" alt="Fail" style="max-width: 100%; height: 200px;padding-left: 40px;"/>
 																		<div class="c3">
 																			<a  <%--href="${APIurl}?id=${i.getId()}"--%>
 																					href="${pageContext.request.contextPath }/client-product-list?type=detail_product&id=${i.getId()}&quantity=1"

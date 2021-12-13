@@ -9,6 +9,7 @@
     <title>Title</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="${url}/css/main.css" rel="stylesheet">
     <style>
         h5 {
             padding: 10px 0px;
@@ -16,7 +17,7 @@
     </style>
 </head>
 <body style="background-color: rgba(0,0,0,0.003)">
-<div class="container" >
+<div class="container login__background" >
     <div class="row" style=" min-height: 100vh;">
         <div class="col-12">
             <div class="row">
@@ -24,7 +25,7 @@
                     <a href="${pageContext.request.contextPath }/client-product-list?type=list&page=1" class="mt2" style=" color:#696763;"><i class="fas fa-home fa-4x"></i></a>
                 </div>
             </div>
-            <div class="row" style=" margin-top: 100px;">
+            <div class="row form__wrapper" style=" margin-top: 100px;">
                 <div class="col-1"></div>
                 <div class="col-4">
                     <h4>Đăng nhập</h4>

@@ -18,7 +18,10 @@
     <link rel="stylesheet" href="${url}/css/menu.css">
 </head>
 <body>
+
+ 	
 <header id="header"><!--header-->
+	
     <div class="header-middle"><!--header-middle-->
         <div class="container">
             <div class="row">
@@ -48,8 +51,10 @@
     </div><!--/header-middle-->
 </header><!--/header-->
 
-<nav>
-    <ul style="display ">
+<nav id="nav">
+
+    <ul >
+    	
         <li><a href="${pageContext.request.contextPath }/home">Trang chủ</a></li>
 
 
@@ -57,10 +62,10 @@
 
             <ul>
                 <c:forEach items="${lstCategory}" var="category">
-                    <li><a href="${pageContext.request.contextPath }/client-product-list?type=category&cate_id=${category.id}&page=1">${category.cateName}</a>
+                    <li><a class = "nav__menuitem" href="${pageContext.request.contextPath }/client-product-list?type=category&cate_id=${category.id}&page=1">${category.cateName}</a>
                         <ul>
                              <c:forEach items="${category.getDetailCategoryEntityList()}" var="detailCategory">
-                                <li><a href="${pageContext.request.contextPath }/client-product-list?type=detail_category&detail_cate_id=${detailCategory.id}&page=1">${detailCategory.detailCateName}</a></li>
+                                <li><a class = "nav__menuitem" href="${pageContext.request.contextPath }/client-product-list?type=detail_category&detail_cate_id=${detailCategory.id}&page=1">${detailCategory.detailCateName}</a></li>
                              </c:forEach>
                         </ul>
                     </li>
@@ -69,16 +74,31 @@
         </li>
         <li><a href="${Pathurl}/salespolicy.jsp">Chính sách bán hàng</a></li>
         <li><a href="${Pathurl}/map.jsp">Liên hệ</a></li>
-        <div class="search-container">
+   
+    </ul>
+<div class="search-container">
             <form action="${pageContext.request.contextPath }/client-product-list">
                 <input name="keyword" type="text" placeholder="Tìm kiếm.." >
                 <input name="type" type="hidden" value="searchByName">
                 <input name="page" type="hidden" value="1">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
-        </div>
-    </ul>
-
+</div>
 </nav>
+
+	<script>
+        const navbar = document.getElementById("nav");
+        window.addEventListener("scroll", ()=>
+        {
+            if(window.scrollY>80)
+            {
+              navbar.classList.add("nav--active");
+            }
+            else
+            {
+              navbar.classList.remove("nav--active");
+            }
+        })
+	</script>
 </body>
 </html>

@@ -29,7 +29,7 @@
 
 <body>
     <jsp:include page="header.jsp"></jsp:include>
-	<section>
+	<section class = "shop__background">
 		<div class="container">
 			<div class="row">
 				<div class="brands-area">
@@ -55,9 +55,9 @@
 					</div>
 				</div>
 			</div>
-			<hr>
-			<div class="row">
-				<ul style="display: inline;">
+
+			<div class="row price-area">
+				<ul  style="display: inline;">
 					<li style="flex:left; padding: 0px 15px; color: black; font-size: 17px;"> Chọn giá sản phẩm:</li>
 					<li> <a style="float:left; padding: 0px 15px; color: blue; font-size: 15px;" href="${pageContext.request.contextPath}/client-product-list?type=Price&startPrice=0&endPrice=500000&page=1"> Dưới 500.000</a></li>
 					<li> <a style="float:left; padding: 0px 15px; color: blue; font-size: 15px;" href="${pageContext.request.contextPath}/client-product-list?type=Price&startPrice=500000&endPrice=1000000&page=1"> 500.000-1.000.000</a></li>
@@ -73,7 +73,7 @@
 				<div class="col-sm-12 padding-right">
 					<div class="features_items" style="min-height: 300px"><!--features_items-->
 						<div class="row">
-							<hr>
+			
 							<c:forEach var = "i" items="${lstProduct}">
 								<c:url value="/image/${i.getImage()}" var="imgUrl"></c:url>
 								<div class="col-sm-4">
