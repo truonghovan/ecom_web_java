@@ -1,11 +1,7 @@
-/* lg */ 
-@media (min-width: 1200px) {
 
-}
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
- 
  
 .usa{
 	margin-right: 0;
@@ -125,6 +121,9 @@
 /* xs */
 @media (max-width: 767px) {
 
+
+	
+	
 .header_top .col-sm-6:first-child{
 	display: inline-block;
 	float: left;

@@ -6,11 +6,186 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
+
+/*reponsive*/
+@media (max-width: 1024px)
+{
+	.col-lg-3.css--overrides
+	{
+		display: none;
+	}
+}
+
+/*CSS override*/
+
+.padding-right
+{
+	padding: 0;
+}
+
+
+:root
+{
+	--main-color: #02112e;
+	--main-background: linear-gradient(135deg, #0cbaba 20%,#3378d3 74%);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   position: relative;
   font-weight:400px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
+
+
+.container
+{
+	padding: 0;
+}
+/*Header*/
+
+nav
+{
+	margin: 0;
+	display: flex;
+	width: 100%;
+	background-color: var(--main-color);
+	color: #fff;
+	font-weight: bold;
+	
+	justify-content: space-between;
+	
+}
+nav ul
+{
+	display: flex;
+	width: 764px;
+	padding: 0;
+	margin: 0;
+	
+}
+.search-container form
+{
+	border-radius: 30px;
+}
+
+nav ul li
+{
+	flex: 1;
+	align-items: center;
+	align-content: center;
+}
+.product-image-wrapper
+{
+	max-width: 400px;
+	margin: 0 auto;
+}
+.nav--active
+{
+    position: fixed;
+    top: 0;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+nav ul li a
+{
+	color: #fff;
+}
+.nav__menuitem
+{
+	background-color: var(--main-color);
+}
+
+/*shop*/
+
+.shop__background
+{
+	background-image: var(--main-background);
+}
+
+
+.brands-area, .price-area
+
+{
+	width: 100%;
+	padding: 0;
+	margin: 20px 0;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+
+section
+{
+	 margin: 0 auto;
+}
+
+#slider
+{
+	height: 450px;
+}
+
+
+.row.row--product
+{
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.row.row--product .col-lg-3.css--overrides
+{
+	flex: 1;
+	background-color: var(--main-color);
+	padding: 0;
+	margin: 0;
+}
+.row.row--product .col-lg-3 img
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	border-radius: 20px;
+}
+.row.row--product .col-lg-9
+{
+	flex: 3;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-items: space-evenly;
+}
+
+.col-sm-12.padding-right.css--overrides
+{
+	background-color: #0cbaba;
+	background-image: var(--main-background);
+	
+}
+
+
+.category-tab .col-sm-12 .nav
+{
+	background-color: var(--main-color);
+}
+
+
+
+/*login*/
+.container.login__background
+{
+	background-image: var(--main-background);
+}
+.row.form__wrapper
+{
+	margin: 20px 0 auto;
+	padding: 20px 0;
+}
+
+/*end*/
 
 ul li {
   list-style: none;
@@ -54,7 +229,7 @@ a#scrollUp {
   bottom: 0px;
   right: 10px;
   padding: 5px 10px;
-  background: red;
+  background: var(--main-color);
   color: #FFF;
   -webkit-animation: bounce 2s ease infinite;
   animation: bounce 2s ease infinite;
@@ -164,13 +339,13 @@ a#scrollUp i{
 }
 
 .usa:hover {
-	background:red;
+	background var(--main-color);
 	color:#fff;
-	border-color:red;
+	border-color:var(--main-color);
 }
 
 .usa:active, .usa.active {
-  background: none repeat scroll 0 0 red;
+  background: none repeat scroll 0 0 var(--main-color);
   box-shadow: inherit;
   outline: 0 none;
 
@@ -182,7 +357,7 @@ a#scrollUp i{
 }
 
 .dropdown-menu  li  a:hover, .dropdown-menu  li  a:focus {
-  background-color: red;
+  background-color: var(--main-color);
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
@@ -218,7 +393,7 @@ a#scrollUp i{
 
 
 .shop-menu ul li a:hover {
-	color:red;
+	color:var(--main-color);
 	background:#fff;
 }
 
@@ -370,7 +545,7 @@ ul.sub-menu {
 }
 
 .companyinfo h2  span{
-  color:red;
+  color:var(--main-color);
 }
 
 .companyinfo p {
@@ -408,7 +583,7 @@ ul.sub-menu {
   top: 0;
   width: 100%;
   height: 61px;
-  background: red;
+  background: var(--main-color);
   border-radius: 3px;
   color: #FFF;
   font-size: 20px;
@@ -503,7 +678,7 @@ ul.sub-menu {
 
 .single-widget ul li a:hover{
 	background:none;
-	color:red;
+	color:var(--main-color);
 }
 
 
@@ -520,7 +695,7 @@ ul.sub-menu {
 
 
 .searchform button {
-  background: red;
+  background: var(--main-color);
   border: medium none;
   border-radius: 0;
   margin-left: -5px;
@@ -535,7 +710,7 @@ ul.sub-menu {
 
 .searchform  button:hover, 
 .searchform  button:focus{
-	background-color:red;
+	background-color:var(--main-color);
 }
 
 .searchform p {
@@ -559,7 +734,7 @@ ul.sub-menu {
 }
 
 .footer-bottom p span a {
-  color: red;
+  color: var(--main-color);
   font-style: italic;
   text-decoration: underline;
 }
@@ -579,7 +754,7 @@ ul.sub-menu {
 }
 
 .carousel-indicators li.active {
-	  background: red;
+	  background: var(--main-color);
 }
 
 .item {
@@ -605,7 +780,7 @@ ul.sub-menu {
 }
 
 .item h1 span {
-	color:red;
+	color:var(--main-color);
 }
 
 .item h2 {
@@ -625,7 +800,7 @@ ul.sub-menu {
 }
 
 .get {
-  background: red;
+  background: var(--main-color);
   border: 0 none;
   border-radius: 0;
   color: #FFFFFF;
@@ -637,7 +812,7 @@ ul.sub-menu {
 
 
 .item button:hover {
-  background: red;
+  background: var(--main-color);
 }
 
 .control-carousel {
@@ -648,7 +823,7 @@ ul.sub-menu {
 }
 
 .control-carousel:hover{
-  color: red ;
+  color: var(--main-color) ;
 }
 
 .right {
@@ -662,7 +837,7 @@ ul.sub-menu {
   padding-top: 15px;
 }
 .left-sidebar h2, .brands_products h2 {
-  color: red;
+  color: var(--main-color);
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -809,7 +984,7 @@ h2.title:before{
 
 
 .tooltip-inner {
-  background-color: red;
+  background-color: var(--main-color);
   border-radius: 4px;
   color: #FFFFFF;
   max-width: 200px;
@@ -819,7 +994,7 @@ h2.title:before{
 }
 
 .tooltip.top .tooltip-arrow {
-  border-top-color: red;
+  border-top-color: var(--main-color);
   border-width: 5px 5px 0;
   bottom: 0;
   left: 50%;
@@ -837,7 +1012,7 @@ h2.title:before{
 
 
 h2.title {
-  color: red;
+  color: var(--main-color);
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -848,9 +1023,11 @@ h2.title {
 }
 
 .product-image-wrapper{
-	border:1px solid #F7F7F5;
+	border-radius: 30px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 	overflow: hidden;
 	margin-bottom:30px;
+	background-color: white;
 }
 
 .single-products {
@@ -864,7 +1041,7 @@ h2.title {
 }
 
 .productinfo h2{
-	color: red;
+	color: var(--main-color);
 	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
@@ -893,7 +1070,7 @@ h2.title {
 }
 
 .product-overlay {
-  background:red;
+  background:var(--main-color);
   top: 0;
   display: none;
   height: 0;
@@ -921,7 +1098,7 @@ h2.title {
   background:#fff;
   border: 0 none;
   border-radius: 0;
-  color: red;
+  color: var(--main-color);
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   margin-bottom: 25px;
@@ -929,7 +1106,7 @@ h2.title {
 
 .product-overlay .add-to-cart:hover {
   background:#fff;
-  color: red;
+  color: var(--main-color);
 }
 
 
@@ -953,7 +1130,7 @@ h2.title {
 }
 
 .add-to-cart:hover {
-  background: red;
+  background: var(--main-color);
   border: 0 none;
   border-radius: 0;
   color: #FFFFFF;
@@ -968,7 +1145,7 @@ h2.title {
 }
 
 .add-to-cart:hover {
-  background: red;
+  background: var(--main-color);
   color: #FFFFFF;
 }
 
@@ -990,16 +1167,22 @@ h2.title {
 
 .choose ul li a:hover{
 	background:none;
-	color:red;
+	color:var(--main-color);
 }
 
 .category-tab {
   overflow: hidden;
+  width: 100%;
+}
+
+.category-tab  .col-sm-12
+{
+	padding: 0;
 }
 
 .category-tab ul {
-  background: red;
-  border-bottom: 1px solid red;
+  background: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
   list-style: none outside none;
   margin: 0 0 30px;
   padding: 0;
@@ -1011,7 +1194,7 @@ h2.title {
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;
-  background-color: red;
+  background-color: var(--main-color);
   font-size: x-large;
   font-weight: 900;
   border:0px;
@@ -1026,7 +1209,7 @@ h2.title {
   border-radius: 4px 4px 0 0;
   line-height: 1.42857;
   margin-right:0;
-}
+}re
 
 .recommended_items {
   overflow: hidden;
@@ -1042,7 +1225,7 @@ h2.title {
 }
 
 .recommended-item-control i {
-  background: none repeat scroll 0 0 red;
+  background: none repeat scroll 0 0 var(--main-color);
   color: #FFFFFF;
   font-size: 20px;
   padding: 4px 10px;
@@ -1101,8 +1284,8 @@ h2.title {
 }
 
 .pagination  .active  a, .pagination  .active  span, .pagination  .active  a:hover, .pagination  .active  span:hover, .pagination  .active  a:focus, .pagination  .active  span:focus {
-  background-color: red;
-  border-color: red;
+  background-color: var(--main-color);
+  border-color: var(--main-color);
   color: #FFFFFF;
   cursor: default;
   z-index: 2;
@@ -1122,7 +1305,7 @@ h2.title {
 }
 
 .pagination  li  a:hover{
-	background:red;
+	background:var(--main-color);
 	color:#fff;
 }
 
@@ -1166,7 +1349,7 @@ h2.title {
 }
 
 .view-product h3 {
-  background: red;
+  background: var(--main-color);
   bottom: 0;
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
@@ -1193,7 +1376,7 @@ h2.title {
   top: 35%;
 }
 .item-control i {
-  background: red;
+  background: var(--main-color);
   color: #FFFFFF;
   font-size: 20px;
   padding: 5px 10px;
@@ -1238,7 +1421,7 @@ h2.title {
 }
 
 .product-information span span {
-  color: red;
+  color: var(--main-color);
   float: left;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
@@ -1271,7 +1454,7 @@ h2.title {
 
 
 .cart {
-  background: red;
+  background: var(--main-color);
   border: 0 none;
   border-radius: 0;
   color: #FFFFFF;
@@ -1316,13 +1499,13 @@ h2.title {
 }
 
 #reviews ul li a i{
-	color:red;
+	color:var(--main-color);
 	padding-right:8px;
 }
 
 #reviews ul li a:hover{
 	background:#fff;
-	color:red;
+	color:var(--main-color);
 }
 
 #reviews p{
@@ -1362,7 +1545,7 @@ h2.title {
 }
 
 #reviews button {
-  background: red;
+  background: var(--main-color);
   border: 0 none;
   border-radius: 0;
   color: #FFFFFF;
@@ -1401,7 +1584,7 @@ h2.title {
 }
 
 .content-404 h2 a {
-  background: red;
+  background: var(--main-color);
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   font-size: 44px;
@@ -1469,7 +1652,7 @@ h2.title {
 }
 
 .login-form form button, .signup-form form button {
-  background: red;
+  background: var(--main-color);
   border: medium none;
   border-radius: 0;
   color: #FFFFFF;
@@ -1494,7 +1677,7 @@ h2.title {
 
 
 .or{
-	background: red;
+	background: var(--main-color);
 	border-radius: 40px;
 	color: #FFFFFF;
 	font-family: 'Roboto', sans-serif;
@@ -1526,7 +1709,7 @@ h2.title {
 }
 
 .breadcrumbs .breadcrumb li a {
-  background:red;
+  background:var(--main-color);
   color: #FFFFFF;
   padding: 3px 7px;
 }
@@ -1537,7 +1720,7 @@ h2.title {
   width: auto;
   border-width: 8px;
   border-style: solid;
-  border-color:transparent transparent transparent red;
+  border-color:transparent transparent transparent var(--main-color);
   position: absolute;
   top: 11px;
   left:48px;
@@ -1555,7 +1738,7 @@ h2.title {
 
 
 #cart_items .cart_info .cart_menu {
-  background: red;
+  background: var(--main-color);
   color: #fff;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
@@ -1610,7 +1793,7 @@ h2.title {
 
 
 #cart_items .cart_info .cart_total_price {
-  color: red;
+  color: var(--main-color);
   font-size: 24px;
 }
 
@@ -1657,7 +1840,7 @@ h2.title {
 }
 
 .cart_delete a:hover {
-  background:red
+  background: var(--main-color);
 }
 
 
@@ -1762,7 +1945,7 @@ h2.title {
 }
 
 .update, .check_out {
-  background: red;
+  background: var(--main-color);
   border-radius: 0;
   color: #FFFFFF;
   margin-top: 18px;
@@ -1829,7 +2012,7 @@ h2.title {
 }
 
 .checkout-options .nav li a {
-  color: red;
+  color: var(--main-color);
   font-size: 18px;
   font-weight: normal;
   padding: 0
@@ -1843,7 +2026,7 @@ h2.title {
   margin-right: 10px;
   border-radius: 50%;
   padding: 5px;
-  background: red;
+  background: var(--main-color);
   color:#fff;
   font-size: 14px;
   padding: 2px 3px;
@@ -1874,7 +2057,7 @@ h2.title {
 
 
 .shopper-info .btn-primary {
-  background: red;
+  background: var(--main-color);
   border: 0 none;
   border-radius: 0;
   margin-right: 15px;
@@ -1959,7 +2142,7 @@ h2.title {
 
 #cart_items .cart_info 
 .table.table-condensed.total-result span {
-  color: red;
+  color: var(--main-color);
   font-weight: 700;
   font-size: 16px
 }
@@ -2030,7 +2213,7 @@ h2.title {
 
 .blog-post-area 
 .post-meta ul li i {
-  background:red;
+  background:var(--main-color);
   color: #FFFFFF;
   margin-left: -4px;
   margin-right: 7px;
@@ -2044,7 +2227,7 @@ h2.title {
   position: absolute;
   width: auto;
   height: auto;
-  border-color:transparent transparent transparent red;
+  border-color:transparent transparent transparent var(--main-color);
   border-width:4px;
   border-style: solid;
   top:6px;
@@ -2054,7 +2237,7 @@ h2.title {
 .blog-post-area 
 .post-meta ul span {
   float: right;
-  color: red
+  color: var(--main-color);
 }
 
 .post-meta span{
@@ -2062,14 +2245,14 @@ h2.title {
 }
 
 .post-meta span i{
-  color: red;
+  color: var(--main-color);
 }
 
 
 .blog-post-area  
 .single-blog-post 
 .btn-primary {
-  background:red;
+  background:var(--main-color);
   border: medium none;
   border-radius: 0;
   color: #FFFFFF;
@@ -2096,7 +2279,7 @@ h2.title {
 .pagination li a:hover,
 .pagination-area 
 .pagination li .active {
-  background:red;
+  background:var(--main-color);
   color: #fff
 }
 
@@ -2124,7 +2307,7 @@ h2.title {
 
 .pager-area 
 .pager li a:hover {
-  background: red;
+  background: var(--main-color);
   color: #fff
 }
 
@@ -2162,7 +2345,7 @@ h2.title {
 .rating-area 
 .ratings .color, 
 .rating-area .color {
-  color: red;
+  color: var(--main-color);
 }
 
 
@@ -2251,7 +2434,7 @@ h2.title {
 
 .blog-socials ul li a:hover {
   color: #fff;
-  background:red
+  background: var(--main-color);
 }
 
 
@@ -2315,7 +2498,7 @@ h2.title {
 }
 
 .sinlge-post-meta li i {
-  background:red;
+  background:var(--main-color);
   color: #FFFFFF;
   margin-right: 10px;
   padding: 8px 10px;
@@ -2342,7 +2525,7 @@ h2.title {
 }
 
 .replay-box label {
-  background:red;
+  background:var(--main-color);
   color: #FFFFFF;
   margin-bottom: 15px;
   padding: 3px 15px;
@@ -2351,7 +2534,7 @@ h2.title {
 }
 
 .replay-box span {
-  color: red;
+  color: var(--main-color);
   float: right;
   font-weight: 700;
   margin-top: 21px;
@@ -2368,7 +2551,7 @@ h2.title {
 
 .replay-box form input:hover, 
 .text-area textarea:hover {
-  border: 1px solid red;
+  border: 1px solid var(--main-color);
 }
 
 .text-area {
@@ -2381,7 +2564,7 @@ h2.title {
 }
 
 .btn.btn-primary {
-  background:red;
+  background:var(--main-color);
   border: 0 none;
   border-radius: 0;
   margin-top: 16px;
@@ -2398,7 +2581,7 @@ h2.title {
   height: auto;
   border-style: solid;
   border-width: 8px;
-  border-color:red transparent transparent transparent;
+  border-color:var(--main-color) transparent transparent transparent;
   top: 25px;
   left: 5px
 } 
@@ -2506,7 +2689,7 @@ h2.title {
 }
 
 .contact-info .social-networks ul li a:hover{
-  color: red;
+  color: var(--main-color);
 }
 
 .c1 {
